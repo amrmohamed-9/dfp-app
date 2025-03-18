@@ -1,0 +1,64 @@
+.about-page{
+    min-height: 100vh;
+    z-index: 4;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.about-landing{
+    min-height: 70vh;
+    background-image: url(../../imgs/about-landing.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vision{
+    padding: 70px 0;
+    background-color: #fff;
+    color:#000;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+}
+.about-content p{
+    font-size: 18px;
+    color: #333;
+    padding-right: 20px;
+}
+
+.mission{
+    padding: 70px 0;
+    background-color: #000;
+    color: #fff;
+}
+.mission-content{
+    padding-left: 70px;
+}
+.mission-content p{
+    color: #888;
+}
+@media (max-width:991px){
+    .mission .about-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mission-content{
+        padding-left: 0;
+    }
+}
+@media (max-width:776px){
+    .vision .about-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+}
+

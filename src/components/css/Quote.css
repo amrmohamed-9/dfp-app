@@ -1,0 +1,29 @@
+.quote{
+    min-height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(37, 190, 218, 0.753);
+}
+.quote .quote-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.quote h1{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+    text-transform: capitalize;
+}
+
+@media (max-width:776px) {
+    .quote{
+        min-height: 20vh;
+    }
+    .quote h1{
+        font-size: 18px;
+    }
+}

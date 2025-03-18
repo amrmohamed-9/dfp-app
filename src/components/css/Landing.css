@@ -1,0 +1,93 @@
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.landing-content {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.landing-content .landing-text  {
+    animation: fade-in 1s ease-out forwards;
+    -webkit-animation: fade-in 1s ease-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+.landing-content .landing-text h1{
+    font-size: 45px;
+}
+.slogan{
+    max-width: fit-content;
+    margin: 20px auto;
+    font-family: "Playwrite IT Moderna", serif;
+
+}
+.slogan p:first-of-type{
+    font-style: italic;
+    color: #f9f9f9;
+    font-size: 30px;
+}
+.slogan p:last-of-type{
+    margin-right: -20px;
+    font-size: 16px;
+    
+}
+
+@media (max-width:768px) {
+    .landing-content .landing-text h1{
+        font-size: 30px;
+    }
+    .slogan{
+        max-width: fit-content;
+        margin: 15px auto;
+    }
+    .slogan p:first-of-type{
+        font-style: italic;
+        color: #f9f9f9;
+        font-size: 24px;
+    }
+    .slogan p:last-of-type{
+        margin-right: -10px;
+        font-size: 14px;
+    }
+}
+@media (max-width:591px) {
+    .landing-content .landing-text h1{
+        font-size: 25px;
+    }
+    .slogan{
+        max-width: fit-content;
+        margin: 10px auto;
+    }
+    .slogan p:first-of-type{
+        font-style: italic;
+        color: #f9f9f9;
+        font-size: 17px;
+    }
+    .slogan p:last-of-type{
+        margin-right: -5px;
+        font-size: 10px;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+}

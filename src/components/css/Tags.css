@@ -1,0 +1,69 @@
+.tags-section {
+    padding: 70px 0;
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    overflow-x: hidden;
+    color: #000;
+}
+
+.tags-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tags-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.tags-img img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+}
+
+/* 🔹 تحسين تنسيق النصوص */
+.open-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+
+
+.more-btn a:hover {
+    background-color: #444;
+}
+
+/* 🔹 **Responsive Design تحسين** */
+@media (max-width: 992px) {
+    .tags-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tags-img {
+        max-width: 90%;
+    }
+
+    .open-text {
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .tags-img {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+.reg-form{
+    z-index: 5;
+    position: relative;
+    color: #fff;
+    padding: 90px 0px;
+    max-width:700px;
+    margin:0 auto;
+
+}
+.form-btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.form-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.form-control:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+}
+.form-control:focus::placeholder{
+    color: transparent;
+    transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+}
+
+.react-tel-input .country-list{
+    background-color: #000;
+}
+.react-tel-input .country-list .country.highlight {
+    background-color: #131111 !important;
+}
+.react-tel-input .country-list .country:hover{
+    background-color: #131111 !important;
+}
+.form-check-input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.form-check{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.form-check-input:focus{
+    box-shadow: none;
+    border: 0;
+}
+.form-check-input:checked{
+    background-color: rgb(55, 29, 85);
+    box-shadow: none;
+    border: 0;
+}
+.form-check-label{
+    font-size: 16px;
+}
+/* 
+@media max {
+    
+} */

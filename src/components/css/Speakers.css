@@ -1,0 +1,68 @@
+.speakers{
+    padding: 90px 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 4;
+    color: #000;
+}
+.speakers-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.speaker-card{
+    /* margin: 30px a; */
+    text-align: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.speaker-card:hover .speaker-img{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+.speaker-card h6{
+    max-width: 250px;
+    margin: 10px auto;
+}
+.speaker-img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 15px;
+    width: 230px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.left-bottom{
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+}
+.right-top{
+    position: absolute;
+    top: 90px;
+    right:20px;
+}
+@media (max-width:776px) {
+    .left-bottom{
+        top: 20px;
+        left: 10px;
+    }
+    .right-top{
+        top: 20px;
+        right:10px;
+    }
+}

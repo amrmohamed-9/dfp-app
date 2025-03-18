@@ -1,0 +1,26 @@
+.media-partners{
+    background-color:#000000d0;
+    position: relative;
+    z-index: 5;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.partners-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.last{
+    width: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+.last img{
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    object-fit: cover;
+}

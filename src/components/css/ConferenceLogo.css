@@ -1,0 +1,115 @@
+.conference-logo {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Quantico", sans-serif;
+}
+
+.conference-logo .logo {
+    width: 400px;
+    max-width: 90%;
+}
+
+.conference-logo .slogan {
+    width: 350px;
+    max-width: 85%;
+}
+
+.hotel {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    z-index: 2;
+}
+
+.subject {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    max-width: 350px;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
+
+.icon-3d {
+    position: absolute;
+    z-index: 0;
+    left: -700px;
+
+}
+
+/* 🔹 Responsive Styles */
+@media (max-width: 1200px) {
+    .conference-logo {
+        padding: 30px;
+    }
+    .conference-logo .logo {
+        width: 300px;
+    }
+    .conference-logo .slogan {
+        width: 300px;
+    }
+    .icon-3d {
+        left: -400px;
+     
+    }
+    .subject {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .hotel {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .conference-logo {
+        padding: 20px;
+    }
+    .conference-logo .logo {
+        width: 250px;
+    }
+    .conference-logo .slogan {
+        width: 350px;
+    }
+    .icon-3d {
+        left: -400px;
+       
+    }
+    .subject {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conference-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    .conference-logo .logo,
+    .conference-logo .slogan {
+        width: 200px;
+    }
+    .icon-3d {
+        left: -200px;
+        top: 60px;
+        height: 100%;
+    }
+}

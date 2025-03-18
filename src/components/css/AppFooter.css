@@ -1,0 +1,112 @@
+.footer{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    /* backdrop-filter: blur(5px);
+    background-color: #00000046 */
+}
+.footer .container{
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyrights{
+    width: 100%;
+}
+.social-icon{
+    font-size: 35px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: #999;
+}
+.social-icon:first-of-type:hover{
+    background-color: rgb(14, 14, 87);
+}
+.social-icon:nth-of-type(2):hover{
+    background-color: rgb(85, 14, 87);
+}
+.social-icon:nth-of-type(3):hover{
+    background-color: rgb(17, 8, 70);
+}
+.social-icon:nth-of-type(4):hover{
+    background-color: rgb(155, 7, 19);
+}
+.social-icon:nth-of-type(5):hover{
+    background-color: rgb(7, 179, 7);
+}
+.contact-info{
+    margin: 0 auto;
+}
+.contact-info p{
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.footer-social{
+    width: 100%;
+    padding-left: 100px;
+    
+}
+.contact-cont{
+    display: flex;
+    align-items: center;
+}
+.icon-cont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width:1200px){
+    .footer-social{
+        padding-left: 30px;
+    }
+    .social-icon{
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    .footer-logo img{
+        width: 200px;
+    }
+}
+@media (max-width:991px){
+    .footer-social{
+        padding-left: 20px;
+    }
+    .social-icon{
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+    }
+    .footer-logo img{
+        width: 180px;
+    }
+    .icon-cont{
+        gap: 10px;
+    }
+}
+@media (max-width:768px){
+    .footer-logo img,.icon-cont{
+        margin-bottom: 10px;
+    }
+    .footer-social{
+        padding-left: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    
+}

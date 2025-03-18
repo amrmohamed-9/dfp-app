@@ -1,0 +1,66 @@
+.agenda-section {
+    background-color: #081d4491;
+    z-index: 4;
+    min-height: 150vh;
+    position: relative;
+    padding: 50px 0;
+}
+.left-side{
+    height: fit-content;
+    z-index: 20;
+    color: #fff;
+}
+.left-side p{
+    color: #f9f9f9;
+}
+.agenda-topics {
+    color: #e2e8f0;
+}
+.agenda-topics h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.topic-card{
+    background: linear-gradient(-45deg , rgba(51, 3, 51, 0.849) 0%, rgba(5, 5, 78, 0.747) 50% );
+
+}
+
+
+.glow-text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.card-text {
+    color: #fffa;
+    font-size: 1.05rem;
+    margin-top: 10px;
+}
+
+[data-aos] {
+    transition-property: transform, opacity !important;
+}
+
+@media (max-width:768px) {
+    .left-side{
+        text-align: center;
+        margin:0 auto;
+    }
+    .agenda-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .cards-container{
+        margin: 0px auto;
+    }
+    .card-text{
+        flex: 1 !important;
+        width: 100% !important;
+        margin: 10px auto !important;
+    }
+}
