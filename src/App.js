@@ -1,6 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { Routes, Route } from "react-router";
-import vidBg from './imgs/0218.mp4';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
@@ -19,10 +18,10 @@ function App() {
       once: true      
     });
   }, []);
-  
+  const bgVid = "https://res.cloudinary.com/dxoongqsw/video/upload/v1742471984/0218_wwd1hc.mp4"
   return (
     <main>
-      <video src={vidBg} playsInline loop muted autoPlay className='bg-video' />
+      <video src={bgVid} playsInline loop muted autoPlay className='bg-video' />
       <AppNavbar />
       <Suspense fallback={<div style={{ height: "100vh" }}></div>}>
         <Routes>

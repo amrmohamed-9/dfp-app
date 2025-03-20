@@ -41,7 +41,7 @@ function AppNavbar() {
 
     return (
         <nav className="navbar" style={navbarStyle}>
-        <div className="container nav-container">
+        <div className="container">
             <div className='toggler-cont'>
                 <button className={`nav-toggler ${isOpen ? 'open' : ''}`} onClick={toggleNavbar}>
                     <span className="nav-toggler-icon"></span>

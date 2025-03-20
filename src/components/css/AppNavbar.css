@@ -7,14 +7,14 @@
   z-index: 1000;
   /* padding: 10px 20px; */
 }
-.nav-container {
+/* .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
   position: relative;
-}
+} */
 .navbar-brand-logo{
   margin: 0 auto;
   width: 200px;

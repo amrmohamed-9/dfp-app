@@ -6,11 +6,11 @@ import Atom from "./Atom";
 // رابط Cloudinary الأساسي
 
 const speakers = [
-  { id: 1, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392536/Eng_Alaa_xiqvdf.jpg`, name: "Eng. Alaa El Sayed", title: "Founder and CEO Voom" },
-  { id: 2, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392539/eng_xbzoeo.png`, name: "Dr. Abd El Rahman Khalil", title: "Business Development & Management Consultant" },
-  { id: 3, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392542/Mr.Mohamed_El_Sakrawy_zfgwfl.png`, name: "Mr. Mohamed El Sakrawy", title: "VP Dotshub" },
-  { id: 4, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392534/arch._owidx5.png`, name: "Dr. Hesham Alqassim", title: "Arch." },
-  { id: 5, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392535/Dr.Mohamed_Kholief_m4adpg.png`, name: "Dr. Mohamed Kholief", title: "Digital Transformation Consultant, Innovation Management & AI Integration Expert" },
+  { id: 1, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392536/Eng_Alaa_xiqvdf.jpg`, name: "Eng. Alaa El Sayed", title: "Founder and CEO Voom" ,width:190},
+  { id: 2, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392539/eng_xbzoeo.png`, name: "Dr. Abd El Rahman Khalil", title: "Business Development & Management Consultant" ,width:175 },
+  { id: 3, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392542/Mr.Mohamed_El_Sakrawy_zfgwfl.png`, name: "Mr. Mohamed El Sakrawy", title: "VP Dotshub" ,width:190 },
+  { id: 4, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392534/arch._owidx5.png`, name: "Arch.Dr. Hesham Mohammed AlQassim", title: "CEO Lecon" ,width:270 },
+  { id: 5, img: `https://res.cloudinary.com/dxoongqsw/image/upload/v1742392535/Dr.Mohamed_Kholief_m4adpg.png`, name: "Dr. Mohamed Kholief", title: "Digital Transformation Consultant, Innovation Management & AI Integration Expert" ,width:190 },
 ];
 
 function Speakers() {
@@ -42,7 +42,7 @@ function Speakers() {
                 <img
                   src={speaker.img}
                   alt={speaker.name}
-                  width={180}
+                  width={speaker.width}
                   className="speaker-img"
                   loading="lazy"
                 />

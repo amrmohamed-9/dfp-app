@@ -6,8 +6,6 @@ import 'aos/dist/aos.css';
 
 const AgendaTopics = () => {
   const [isStickyEnabled, setIsStickyEnabled] = useState(window.innerWidth > 768);
-
-  // قائمة المواضيع يتم إنشاؤها مرة واحدة فقط باستخدام useMemo
   const topics = useMemo(() => [
     { title: "Emerging trends in prop tech", description: "Discussing the latest innovations in property technology." },
     { title: "Sustainability and green tech in the real estate sector", description: "Exploring eco-friendly technologies in real estate." },
@@ -21,8 +19,6 @@ const AgendaTopics = () => {
     { title: "Real estate cyber security challenge", description: "Addressing cybersecurity challenges in real estate." },
     { title: "The Artificial Intelligence of Things (AIoT)", description: "Combination of (AI)  with (IoT) infrastructure to improve human-machine interactions." }
   ], []);
-
-  // تحديث حالة StickyBox فقط عند تغير حجم الشاشة
   const handleResize = useCallback(() => {
     const shouldEnableSticky = window.innerWidth > 768;
     if (shouldEnableSticky !== isStickyEnabled) {

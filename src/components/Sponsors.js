@@ -12,9 +12,9 @@ function Sponsors(){
                     <div className='sponsor-img'>
                         <a href='https://voomglobal.com/' target='_blank' rel="noreferrer"><img src={logoVoom} width={400} alt='voom global' className='my-3' loading='lazy'/></a>
                     </div>
-                    <h2 className='font-q mt-5'>Gold</h2>
+                    <h2 className='font-q mt-5'>Gold Sponsor</h2>
                     <div className='sponsor-img'>
-                    <a href='https://www.facebook.com/Leconcompany/' target='_blank' rel="noreferrer"><img src={logoLv}  alt='voom global' width={250} className='my-3' loading='lazy'/></a>
+                    <a href='https://www.facebook.com/Leconcompany/' target='_blank' rel="noreferrer"><img src={logoLv}  alt='voom global' width={220} className='my-3' loading='lazy'/></a>
                     </div>
                 </div>
             </div>

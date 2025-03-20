@@ -114,6 +114,30 @@ to {
 }
 }
  */
+ @media (max-width:1300px) {
+    .partners-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    }
+}
+@media (max-width:1250px) {
+    .partners-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    }
+}
+@media (max-width:1111px) {
+    .partners-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+    }
+}
+@media (max-width:891px) {
+    .partners-wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+
+    }
+}
 @media (max-width:768px) {
     .partners-wrapper{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
