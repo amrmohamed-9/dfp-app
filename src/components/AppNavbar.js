@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './css/AppNavbar.css';
 import { Link } from 'react-router';
-import logo from '../imgs/White.png';
 import {FaBars} from "react-icons/fa"
 function AppNavbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +8,7 @@ function AppNavbar() {
         backgroundColor: "transparent",
         transition: "all 0.3s ease-in-out",
     });
+    const logoUrl = "https://res.cloudinary.com/dxoongqsw/image/upload/v1742392526/White_mcz8gk.webp";
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
@@ -63,7 +63,7 @@ function AppNavbar() {
             </div>
             <div className='navbar-brand-logo'>
             <Link className="navbar-brand" to="/" onClick={handleLinkClick}>
-                <img src={logo} width={"100%"} alt='Digital future pioneers' />
+                <img src={logoUrl} width={"100%"}   alt='Digital future pioneers' />
             </Link>
             </div>
             <div className='btn-cont'>

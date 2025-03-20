@@ -51,11 +51,17 @@ function Form() {
         e.preventDefault();
 
         emailjs
+        // .sendForm(
+        //     "service_r0lm6bh",    
+        //     "template_imjt73a",   
+        //     formRef.current,
+        //     "1iCr5bBYMkIzPlO-a"   
+        // )
         .sendForm(
-            "service_r0lm6bh",    
-            "template_imjt73a",   
+            "service_x4el0yz",    
+            "service_x4el0yz",   
             formRef.current,
-            "1iCr5bBYMkIzPlO-a"   
+            "ejMXt8leDjKOnGrV4"   
         )
         .then(
             (result) => {

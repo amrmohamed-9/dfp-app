@@ -1,19 +1,21 @@
 .sponsors{
     padding-top: 60px;
     padding-bottom: 20px;
-    background-color:#000000d0;
+    background-color: black;
+    /* background: linear-gradient(45deg ,rgba(214, 215, 215, 0.263) 40%,#ffffff  100%); */
     position: relative;
     z-index: 4;
     color: #fff;
+    /* background-color: #000000d0; */
+
 }
 .sponsor-img{
     width: 250px;
-    height: 150px;
+    height: 120px;
     margin: 20px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -30,11 +32,11 @@
     margin-right:10px;
 }
 .sponsor-img:hover img{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
 }
 .sponsers-wrapper{
     /* display: grid;
@@ -43,4 +45,12 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+
+@media (max-width:768px) {
+
+    .sponsor-img img{
+        max-width: 100%;
+    }
 }

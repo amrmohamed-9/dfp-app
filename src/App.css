@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Quantico';
+  src: url('/public/fonts/Quantico-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+@font-face {
+  font-family: 'Moderna';
+  src: url('/public/fonts/PlaywriteITModerna-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/public/fonts/Poppins-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
 body{
   margin: 0;
   padding: 0;

@@ -1,21 +1,15 @@
+import { useEffect } from 'react';
 import './css/TargetAudience.css';
-import img1 from '../imgs/icons/realest.png';
-import img2 from '../imgs/icons/gov it tech.png';
-import img3 from '../imgs/icons/IT Tech.png';
-import img4 from '../imgs/icons/energy-removebg-preview.png';
-import img5 from '../imgs/icons/trans.png';
-import img6 from '../imgs/icons/finance-removebg-preview.png';
-import img7 from '../imgs/icons/tour.png';
-import img8 from '../imgs/icons/startup.png';
-// import Spline from '@splinetool/react-spline';
-import img from '../imgs/slogan.png'
 
 function TargetAudience() {
-    window.scrollTo(0, 0);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+      
+    const img = "https://res.cloudinary.com/dxoongqsw/image/upload/v1742392525/slogan_bdmvgy.png"
     const services = [
         { 
-            icon: img1, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394013/realest_bz66o0.png", 
             title: "Real Estate Sector", 
             sections: [
                 { header: "Property Developers:", description: "Integrate PropTech solutions." },
@@ -24,7 +18,7 @@ function TargetAudience() {
             ]
         },
         { 
-            icon: img2, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394018/gov_it_tech_t5jopf.png", 
             title: "Government Sector", 
             sections: [
                 { header: "Urban Planning:", description: "Use digital twins to simulate and plan smart cities, optimizing infrastructure, transportation, and utilities." },
@@ -32,7 +26,7 @@ function TargetAudience() {
             ]
         },
         { 
-            icon: img3, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394012/IT_Tech_pd0r7q.png", 
             title: "Technology Services", 
             sections: [
                 { header: "Software Developers:", description: "Create platforms for digital twins, IoT integration, and smart city applications." },
@@ -41,7 +35,7 @@ function TargetAudience() {
             ]
         },
         { 
-            icon: img4, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394015/energy-removebg-preview_fywkd7.png", 
             title: "Energy and Utilities", 
             sections: [
                 { header: "Renewable Energy Providers:", description: "Integrate smart grids and energy management systems in smart cities." },
@@ -49,7 +43,7 @@ function TargetAudience() {
             ]
         },
         { 
-            icon: img5, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394014/trans_bpzeyn.png", 
             title: "Transportation and Logistics", 
             sections: [
                 { header: "Public Transport Authorities:", description: "Implement smart mobility solutions like real-time tracking, autonomous vehicles, and traffic management systems." },
@@ -57,7 +51,7 @@ function TargetAudience() {
             ]
         },
         { 
-            icon: img6, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394018/finance-removebg-preview_gnbcqi.png", 
             title: "Financial Services", 
             sections: [
                 { header: "Banks and Mortgage Providers:", description: "Adopt PropTech for digital mortgage processing and blockchain-based property transactions." },
@@ -65,7 +59,7 @@ function TargetAudience() {
             ]
         },
         { 
-            icon: img7, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394015/tour_wmboej.png", 
             title: "Tourism and Hospitality", 
             sections: [
                 { header: "Hotels and Resorts:", description: "Implement smart room systems and IoT-based guest services." },
@@ -73,7 +67,7 @@ function TargetAudience() {
             ]
         },
         { 
-            icon: img8, 
+            icon: "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394013/startup_ipkt0t.png", 
             title: "Tech Start-up Companies", 
             sections: [
                 { header: "Technology Innovators:", description: "Bring technology services and products or deliver existing services in new ways." },

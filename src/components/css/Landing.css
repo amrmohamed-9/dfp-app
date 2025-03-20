@@ -19,14 +19,17 @@
     -webkit-animation: fade-in 1s ease-out forwards;
     animation-delay: 0.8s;
     opacity: 0;
+    text-rendering: optimizeSpeed;
+    will-change: transform, opacity;
 }
+
 .landing-content .landing-text h1{
     font-size: 45px;
 }
 .slogan{
     max-width: fit-content;
     margin: 20px auto;
-    font-family: "Playwrite IT Moderna", serif;
+    font-family: "Moderna", serif;
 
 }
 .slogan p:first-of-type{

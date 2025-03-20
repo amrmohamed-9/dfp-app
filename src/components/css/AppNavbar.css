@@ -5,7 +5,7 @@
   position: fixed !important;
   width: 100%;
   z-index: 1000;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
 }
 .nav-container {
   display: flex;
@@ -220,10 +220,10 @@
 @media (max-width: 480px){
 
   .toggler-cont,.btn-cont{
-    width: 120px;
+    width: 110px;
     font-size: 2px;
   }
   .navbar-brand-logo{
-    width: 90px;
+    width: 100px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './css/ScrollToTop.css'; // تأكد من إنشاء ملف CSS لتنسيق الزر
+import './css/ScrollToTop.css'; 
 
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +15,6 @@ function ScrollToTop() {
 
     window.addEventListener('scroll', toggleVisibility);
 
-    // إزالة الlistener عند إزالة الكومبوننت
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
@@ -24,7 +23,7 @@ function ScrollToTop() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // انتقال سلس
+      behavior: 'smooth',
     });
   };
 
@@ -32,7 +31,7 @@ function ScrollToTop() {
     <>
       {isVisible && (
         <div className="scroll-to-top" onClick={scrollToTop}>
-          ↑ {/* يمكنك تغيير هذا الرمز أو استبداله بصورة */}
+          ↑
         </div>
       )}
     </>

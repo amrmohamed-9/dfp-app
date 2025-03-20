@@ -1,8 +1,8 @@
 import { Link } from 'react-router'; 
-import img from '../imgs/icons/bg.jpg';
 import './css/Tags.css';
 
 function Tags() {
+    const img = "https://res.cloudinary.com/dxoongqsw/image/upload/v1742394014/bg_tjldm0.jpg"
     return (
         <section className="tags-section">
             <div className='container d-flex flex-wrap align-items-center justify-content-between'>

@@ -3,9 +3,8 @@
     z-index: 23;
     position: relative;
 }
-
 .target-landing{
-    background-image: url(../../imgs/New\ folder/bg3.jpg);
+    background-image: url(https://res.cloudinary.com/dxoongqsw/image/upload/v1742394600/bg3_ykdsvi.jpg);
     background-color: #090c2d;
     width: 100%;
     height: 100vh;
@@ -17,8 +16,6 @@
     text-align: center;
     justify-content: center;
 }   
-
-
 .target-landing::after{
     content: "";
     position: absolute;
@@ -34,22 +31,17 @@
     margin-bottom: 40px;
     
 }
-
-
-
 .what-we-offer {
     background: #fff;
     color: #000;
     padding: 80px 20px;
     text-align: center;
 }
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
-
 .service-card {
     background: white;
     padding: 0 20px 20px 20px;
@@ -61,7 +53,6 @@
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
-
     position: relative;
 }
 .service-card::after{
@@ -118,7 +109,6 @@
 .content-wrapper{
     text-align: left;
 }
-
 .img-wrapper{
     display: flex;
     align-items: center;
@@ -141,10 +131,6 @@
 }
 @media (max-width: 768px) {
     .target-landing {
-        /* flex-direction: column-reverse; */
-        /* text-align: center;
-        justify-content: end;
-        align-items: center; */
         padding-bottom: 80px;
     }
     .target-landing h3{
@@ -157,7 +143,6 @@
         grid-template-columns: 1fr;
     }
 }
-
 @media (max-width: 480px){
     .target-landing img{
         width: 300px;
